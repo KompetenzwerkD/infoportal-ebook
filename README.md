@@ -8,7 +8,7 @@ Create a pdf-ebook from the contents of the KompetenzwerkD-Infoportal.
 - Pandoc 
 - Latex (with German language package)
 
-- [A clone of the KompetenzwerkD website repository](https://www.github.com/kompetenzwerkd/infoortal)
+- [A clone of the KompetenzwerkD website repository](https://www.github.com/kompetenzwerkd/infoportal)
 
 ## Use
 
