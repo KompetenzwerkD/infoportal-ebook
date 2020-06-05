@@ -8,7 +8,17 @@ Create a pdf-ebook from the contents of the KompetenzwerkD-Infoportal.
 - Pandoc 
 - Latex (with German language package)
 
+- [A clone of the KompetenzwerkD website repository](https://www.github.com/kompetenzwerkd/infoortal)
+
 ## Use
+
+```źsh
+$ python build_ebook.py
+```
+
+Builds a new ebook version of the website, overwrites the current one (`ebook/kompetenzwerkd_infoportal.pdf`) and places a copy with a timestamp  in the archive (`ebook/archive/kompetenzwerkd_infoportal_<DATE>.pdf`).
+
+Configuraiton (website content diretory, the pdf title page, etc.) is at the moment directly defined in `build_ebook.py`.
 
 ## Lincense
 

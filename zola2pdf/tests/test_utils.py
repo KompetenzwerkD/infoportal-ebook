@@ -1,5 +1,5 @@
 import pytest
-from zola2pdf import set_header_depth
+from ..utils import set_header_depth
 
 TEST = """
 # h1
