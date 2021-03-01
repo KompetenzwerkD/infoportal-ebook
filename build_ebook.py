@@ -18,7 +18,8 @@ author:
 
 SKIP_PAGES = [
     "ebook.md",
-    "impressum.md"
+    "impressum.md",
+    "sonderzeichen.md"
 ]
 
 
@@ -43,6 +44,8 @@ if __name__ == "__main__":
     content = content.replace("➜", "->")
     content = content.replace("✪", "*")
     content = content.replace("➤", ">")
+    content = content.replace("⚠", "[!]")
+    content = content.replace("☆", "*")
 
     # convert to pdf
     pypandoc.convert_text(content, 

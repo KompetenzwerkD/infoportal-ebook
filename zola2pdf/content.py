@@ -16,9 +16,12 @@ class Page():
         meta, text = load_zola_md(filepath)
         self.meta = meta
 
+        print(self.base_path)
+
         #replace static image links
         text = text.replace("![](images", "![]({}/static/images".format(self.base_path))
-        text = text.replace("![](/images", "![]({}/static/images".format(self.base_path))
+        text = text.replace("](infoportal/images", "]({}/static/images".format(self.base_path))
+        text = text.replace("](/infoportal/images", "]({}/static/images".format(self.base_path))
 
         #replace remove html tags
 
